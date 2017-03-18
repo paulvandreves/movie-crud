@@ -38,15 +38,51 @@
 ![Index](/mockups/show.png)
 
 
-## ROUTES 
- 
+## ROUTES
+
 Use the RESTful routes for each of your routes.
 
 - GET /movies   _lists all movies_
 - POST /movies  _creates a new movie_
 - GET /movies/:id  _show one movie_
 - GET /movies/:id/edit _form to edit a movie_
-- ... etc 
+- ... etc
 
-
-
+// for when I accdently delete my db.json testing my delets method 
+"movies": [
+  {
+    "id":0,
+    "title":"Yooper Troopers",
+    "director": "Micheal Bay",
+    "year": "2010",
+    "myrating":"5"
+  },
+  {
+    "id":1,
+    "title":"Yooper Troopers",
+    "director": "Micheal Bay",
+    "year": "2010",
+    "myrating":"5"
+  },
+  {
+    "id":2,
+    "title":"Yooper Troopers",
+    "director": "Micheal Bay",
+    "year": "2010",
+    "myrating":"5"
+  },
+  {
+    "id":3,
+    "title":"Yooper Troopers",
+    "director": "Micheal Bay",
+    "year": "2010",
+    "myrating":"5"
+  },
+  {
+    "id":4,
+    "title":"Yooper Troopers",
+    "director": "Micheal Bay",
+    "year": "2010",
+    "myrating":"5"
+  }
+]
