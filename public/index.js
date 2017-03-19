@@ -6,6 +6,8 @@ function getDBData() {
    $.each(movies, function (key, obj) {
     var id = obj.id;
     $('.tbody').append($(`<tr class=tr${id}>`));
+    $(`.tbody`).append(`<button class="dl${id}"> Delete </button>`)
+    $(`.tbody`).append(`<a href="edit.html?${id}"  class=""> Edit </a>`)
     for (var prop in obj) {
       // can I say if obj[prop] === id dont append?
       if(obj[prop]=== obj.title){
@@ -22,8 +24,6 @@ function getDBData() {
         $(`.tr${id}`).append(`<td>` + obj[prop] + '</td>')
       }
     }
-    $(`.tbody`).append(`<button class="dl${id}"> Delete </button>`)
-    $(`.tbody`).append(`<a href="edit.html?${id}"  class=""> Edit </a>`)
    });
   });
 // append form feilds for edit .html

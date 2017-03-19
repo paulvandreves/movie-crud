@@ -30,7 +30,6 @@ function getDBData() {
    myrating: $('.myrating').val(),
    posterurl: $('.posterurl').val()
   }
-
   // what moive do I edit? where do I send this put
   console.log(payload);
   console.log(queryID);
