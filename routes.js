@@ -38,12 +38,10 @@ router.put('/movies/:id', (req, res) => {
  //var devId = parseInt(req.params.id);
  var devId = req.params.id;
  console.log(req.body);
- req.body.id = parseInt(req.body.id)
  db.get('movies')
   .find({
    id: devId
   })
-
   .assign(req.body) // should attach to object in real world
   .write()
   // if promise is resolved do this if rejected do this
