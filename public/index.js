@@ -30,10 +30,11 @@ function getDBData() {
 
 
  // delete a movie when clicked
- $(document).on(`click`, `button.dl0, .dl1, .dl2, .dl3, .dl4, .dl5, .dl6, .dl7, .dl7`, function (e) {
+ $(document).on(`click`, `.button .dl0, .dl1, .dl2, .dl3, .dl4, .dl5, .dl6, .dl7, .dl7`, function (e) {
   $('.' + this.className).remove()
   var id = $(this).attr('class').substring(2, 3)
   $(`.tr${id}`).remove()
+  console.log(id)
   $.ajax({
     url: '/movies/' + id,
     method: 'Delete',

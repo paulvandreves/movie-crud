@@ -55,7 +55,7 @@ router.put('/movies/:id', (req, res) => {
 
 router.delete('/movies/:id', (req, res) => {
  //var devId = parseInt(req.params.id);
- var devId = req.body.params;
+ var devId = req.params.id;
  db.get('movies')
   .remove({
    id: devId
